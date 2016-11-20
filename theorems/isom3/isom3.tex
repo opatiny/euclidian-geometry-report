@@ -1,0 +1,50 @@
+\documentclass[a4paper,12pt]{article}
+
+\input{packages}
+
+\begin{document}
+
+\pagebreak
+\subsection{Troisième cas d'isométrie des triangles}
+\begin{theorem}
+Deux triangles qui ont respectivement les trois côtés isométriques sont isométriques.
+\end{theorem}
+\begin{proof}
+Nous considérons deux triangles $a_1b_1c_1$ et $a_2b_2c_2$.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{schema/Cas_3.PNG}
+\end{figure}
+
+ \begin{hyp}
+     $a_1\equiv a_2$,
+     $b_1\equiv b_2$ et
+     $c_1\equiv c_2$
+ \end{hyp}
+ \begin{concl}
+     $\alpha \equiv \alpha'$,
+     $\beta \equiv \beta'$ et
+     $\gamma \equiv \gamma'$
+ \end{concl}
+ Nous rassemblons les deux triangles en un quadrilatère en superposant $c_1$ et $c_2$. 
+ 
+ \begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{schema/Cas3_2.png}
+\end{figure}
+ 
+ Puis nous relions les sommets en $\gamma$ et $\gamma'$, nous nommons ce segment $h$. Ainsi, nous obtenons deux triangles qui sont isocèles $\triangle a_1a_2h$ et $\triangle b_1b_2h$ ($a_1\equiv a_2$ pour $\triangle a_1a_2h$ et $b_1\equiv b_2$ pour $\triangle b_1b_2h$, voir section 6.3) ce qui signifie que $\theta_1 \equiv \theta_2$ et que $\theta_3 \equiv \theta_4$.
+ 
+ 
+ \begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{schema/Cas3_3.png}
+\end{figure}
+
+ 
+ 
+ Finalement, comme $\alpha \equiv \theta_1 + \theta_2$ et $\alpha' \equiv \theta_3 + \theta_4$, nous avons démontré que $\alpha \equiv \alpha'$. Les deux triangles $a_1b_1c_1$ et $a_2b_2c_2$ sont donc isométriques (axiome III).
+\end{proof}
+
+\end{document}

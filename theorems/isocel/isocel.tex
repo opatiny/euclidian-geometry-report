@@ -1,0 +1,67 @@
+\documentclass[a4paper,12pt]{article}
+
+\input{packages}
+
+\begin{document}
+
+\pagebreak
+\subsection{Triangles isocèles}
+\begin{theorem}
+Un triangle est isocèle si et seulement si les angles opposés aux côtés isométriques sont isométriques.
+\end{theorem}
+
+\begin{proof}
+La démonstration de ce théorème se déroule en deux parties:
+\begin{itemize}
+    \item La première partie doit démontrer qu'un triangle avec deux côtés isométriques est isocèle
+    \item La deuxième partie doit démontrer qu'un triangle avec deux angles isométriques est isocèle
+    \end{itemize}
+
+    \begin{enumerate}
+        \item Nous considérons le triangle $ABC$.
+        \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.7]{schema/iso1.png}
+    \end{figure}
+    
+    
+    \begin{hyp}
+    $a\equiv b$
+    \end{hyp}
+    \begin{concl}
+    $\alpha \equiv \beta$
+    \end{concl}
+    En faisant la bissectrice B de l'angle $\gamma$, nous obtenons deux triangles (1 et 2) qui ont un angle isométrique ($\gamma_1 \equiv \gamma_2$) compris entre deux côtés isométriques ($a\equiv b$, B). Donc nous savons que les triangles 1 et 2 sont isométriques, grâce au premier cas d'isométrie des triangles. Par conséquant, $\alpha \equiv \beta$ et le triangle $ABC$ est isocèle.
+    
+    
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.45]{schema/iso2.png}
+    \end{figure}
+    
+    
+    
+    
+    \item Nous considérons le triangle $ABC$.
+    \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.7]{schema/iso3.png}
+    \end{figure}
+
+    \begin{hyp}
+     $\alpha \equiv \beta$
+    \end{hyp}
+    \begin{concl}
+     $a\equiv b$
+    \end{concl}
+    Nous tirons la hauteur h partant de $\gamma$ et obtenons deux triangles 1 et 2. Ces deux triangles ont deux angles ($\alpha \equiv \beta$, les angles droits) et un côté (h) isométriques, donc ils sont isométriques (corollaire du deuxième cas d'isométrie des triangles). Par conséquent $a\equiv b$ et le triangle $ABC$ est isocèle.
+    
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.45]{schema/iso4.png}
+    \end{figure}
+    
+\end{enumerate}
+\end{proof}
+
+\end{document}

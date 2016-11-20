@@ -1,0 +1,49 @@
+\documentclass[a4paper,12pt]{article}
+
+\input{packages}
+
+\begin{document}
+
+\subsection{Théorème des médiatrices}
+
+\begin{theorem}
+La médiatrice d'un segment est le lieu géométrique des points équidistants à ses extrémités.
+\end{theorem}
+
+%insert figure
+
+Pour démontrer ce théorème, nous devons prouver les deux affirmations suivantes:
+\begin{enumerate}
+    \item Tout point se situant sur la médiatrice d'un segment se situe à la même distance de ses deux extrémités.
+    \item Tout point se trouvant à égale distance de deux autres points se situe sur la médiatrice du segment défini par ces derniers.\\
+\end{enumerate}
+
+
+\begin{enumerate}
+    \item \begin{proof}
+    Nous considérons le segment $AB$, ayant $m$ comme médiatrice. $M$ est le point à l'intersection de $m$ et du segment $AB$.
+    
+    \begin{hyp}
+    $P \in m$ 
+    \end{hyp}
+    \begin{concl}
+    $AP \equiv BP$
+    \end{concl}
+     
+    Grâce au premier cas d'isométrie des triangles, nous observons que les triangles $\triangle AMP$ et $\triangle BMP$ sont isométriques car ils ont un côté en commun ($MP$) et que $AM$ et $MB$ sont isométriques. Par conséquent, $AP \equiv BP$.
+     \end{proof}
+     
+    \item \begin{proof}
+         Nous considérons un point $P$ à égale distance de deux autres point, $A$ et $B$. 
+        
+        \begin{hyp}
+        $AP \equiv BP$
+        \end{hyp}
+        \begin{concl}
+        $P \in m$
+        \end{concl}
+        Nous traçons le segment $MP$ et observons que c'est la médiane du triangle formé par les points $A$, $P$ et $B$, car il part        de l'un des sommet du triangle et partage le côté opposé en deux parties égales. Ainsi, nous observons que les angles $\angle      APM$ et $\angle MPB$ sont isométriques.  Par conséquent, les triangles $\triangle AMP$ et $\triangle BMP$ sont isométriques      car ils possèdent un angle isométrique ($\angle APM \equiv \angle MPB$) compris entre deux côtés isométriques ($AP \equiv      BP$, par hypothèse et $MP$ en commun). Finalement, le segment $MP$ et la médiatrice de $AB$ sont confondus et $P \in m$.\\
+        \end{proof}
+\end{enumerate}
+
+\end{document}

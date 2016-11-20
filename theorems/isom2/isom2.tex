@@ -1,0 +1,43 @@
+\documentclass[a4paper,12pt]{article}
+
+\input{packages}
+
+\begin{document}
+
+\pagebreak
+\subsection{Deuxième cas d'isométrie des triangles}
+\begin{theorem}
+Deux triangles qui ont respectivement un côté et les angles adjacents isométriques sont isométriques.
+\end{theorem}
+\begin{hyp}
+$a_1 \equiv a_2$, $\beta_1 \equiv \beta_2$ et $\gamma_1 \equiv \gamma_2$
+\end{hyp}
+\begin{concl}
+$b_1 \equiv b_2$, $c_1 \equiv c_2$ et que $\alpha_1 \equiv \alpha_2$
+\end{concl}
+\begin{proof}
+Considérons deux triangles $\triangle a_1b_1c_1$ et $\triangle a_2b_2c_2$. Nous avons reporté le côté $c_2$ sur le côté $c_1$. alors, il y a trois possibilités:
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{schema/cas2.png}
+\end{figure}
+\begin{enumerate}
+\item $c_1 = c_2$, alors les deux triangles sont isométriques (axiome III)
+\item $c_1<c_2$
+\item $c_1>c_2$
+\end{enumerate}
+
+\pagebreak
+Dans le deuxième et troisième cas, on forme le triangle $\triangle b_1b_3c_2'$. Ce triangle est isométrique au triangle $\triangle a_2b_2c_2$, car ils ont en commun un angle compris entre deux côtés isométriques. Par conséquent, $\gamma_2\equiv \gamma_3$, donc $\gamma_1$ et $\gamma_3$ sont confondus, d est nul et $c_1\equiv c_2$. On en revient donc au premier cas: les deux triangles $\triangle a_1b_1c_1$ et $\triangle a_2b_2c_2$ sont isométriques grâce au premier cas d'isométrie des triangles.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{schema/Cas2_2.png}
+\end{figure}
+
+
+
+\end{proof}
+
+\end{document}

@@ -1,0 +1,24 @@
+\documentclass[a4paper,12pt]{article}
+
+\input{packages}
+
+\begin{document}
+
+\begin{corollary} \label{cor:mediatrices}
+Les médiatrices d'un triangle se croisent en un point unique, le centre du cercle circonscrit du triangle $ABC$.
+\end{corollary}
+\begin{proof}
+Nous considérons un triangle quelconque $ABC$. Nous nommons $I$ l'intersection des médiatrices des côtés $AC$ ($M_{AC}$) et $BC$ ($M_{BC}$).
+
+\begin{hyp}
+$I \in M_{AC}$ et $I \in M_{BC}$
+\end{hyp}
+\begin{concl}
+$I \in M_{AB}$ (la médiatrice du côté $AB$) 
+\end{concl}
+
+En considérant l'hypothèse et la définition de la médiatrice (définition \ref{def:mediatrice}), nous savons que $IA \equiv IC$ et que $IB \equiv IC$. Par conséquent, $IA \equiv IB$. Puisque $I$ est à une distance équivalente de $A$ et de $B$, $I \in M_{AB}$.\\
+De plus, puisque $I$ est le lieu des points équidistants à $A$, $B$ et $C$, c'est aussi le cercle du cercle circonscrit de $\triangle ABC$.
+\end{proof}
+
+\end{document}

@@ -1,0 +1,46 @@
+% don't forget the document class, generally : \documentclass[a4paper,12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{gensymb}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{scrextend}
+\usepackage{caption} 
+\usepackage{siunitx}
+\usepackage{enumitem}
+\usepackage{amsthm}
+\usepackage{fancyhdr}
+\usepackage{amssymb}
+\usepackage{wrapfig}
+\usepackage{geometry}
+\usepackage{standalone}
+\usepackage[usenames, dvipsnames]{color}
+
+
+\geometry{hmargin=1in, vmargin=1in}
+
+ \newenvironment{absolutelynopagebreak}
+ {\par\nobreak\vfil\penalty0\vfilneg
+ \vtop\bgroup}
+ {\par\xdef\tpd{\the\prevdepth}\egroup
+ \prevdepth=\tpd}
+ 
+ \pagestyle{fancy}                        
+\fancyhf{}                               
+\fancyhf[HL]{Application des maths}                
+\fancyhf[HR]{Géométrie euclidienne}             
+\fancyhf[FC]{\thepage/\pageref{Lastpage}}
+ 
+\newtheorem{definition}{Définition}[section]
+\newtheorem{theorem}{Théorème}
+\newtheorem{corollary}{Corollaire}[theorem]
+\newtheorem{lemma}[theorem]{Lemme}
+\newtheorem*{hyp}{Hypothèse}
+\newtheorem*{concl}{Conclusion}
+\newtheorem*{remark}{Remarque}
+
+\captionsetup{format=default,labelformat=simple,labelsep=colon,
+justification=justified,font={sf,small},labelfont=bf,
+textfont=default} 

@@ -1,0 +1,58 @@
+\documentclass[a4paper,12pt]{article}
+
+\input{packages}
+
+\begin{document}
+
+\subsection{Théorème de l'angle externe}
+\begin{theorem}
+Dans tout triangle et pour chaque sommet, l'angle externe est plus grand que l'angle intérieur en chacun des autres sommets.
+\end{theorem}
+
+\begin{proof}
+Considérons un triangle $\triangle abc$ qui a $\alpha'$ comme angle externe à $\alpha$.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.9]{schema/Angle_externe_1.PNG}
+\end{figure}
+
+Se présentent alors trois cas possibles :
+
+\begin{enumerate}
+    \item $\alpha'  \equiv \gamma$
+    \item $\alpha' < \gamma$
+    \item $\alpha' > \gamma$
+\end{enumerate}
+Il nous faut démontrer que les cas 1 et 2 sont impossibles et que seul le cas 3 reste correct.
+\begin{enumerate}
+
+    \item Tout d'abord nous reportons le côté $CB$ sur le prolongement du segment $AB$ et obtenons le segment DA. Ensuite, nous relions les points $C$ et $D$. Ainsi nous obtenons un nouveau triangle $\triangle DCA$, dont l'un des angles est $\alpha'$.
+	Grâce au premier cas d'isométrie des triangles, on déduit que les triangles $\triangle DCA$ et $\triangle abc$ sont isométriques ($DA \equiv CB$, $\alpha'\equiv \gamma$ et $CA$ est commun aux deux triangles). 
+	Par conséquent $\angle{DCA}$ équivaut à alpha. Ce qui signifie que l'angle $BCD$ ($\alpha + \gamma$) est plat, donc que les triangles sont plats.
+	Ce qui est absurde, $\alpha'$ ne peut pas être équivalent à $\gamma$. 
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.6]{schema/Angle_externe_2.png}
+    \end{figure}
+	\begin{flushright}
+    $\bigstar $
+    \end{flushright}
+    
+    \item Nous considérons le triangle $\triangle abc$ et nous plaçons un point $B'$ sur le segment $AB$, tel que $\angle{ACB'} \equiv \alpha'$.
+     Donc ce triangle a un angle externe équivalent à un angle interne, ce qui nous renvoie au premier cas. 
+     Il n'est donc pas possible que $\alpha'$ soit plus petit que $\gamma$.
+     \begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.9]{schema/Angle_externe_3.PNG}
+\end{figure}
+     \begin{flushright}
+    $\bigstar $
+    \end{flushright}
+
+\end{enumerate}
+
+Nous avons démontré que les cas 1 et 2 sont impossibles et que la seule possibilité est que $\alpha' > \gamma$.
+\end{proof}
+
+
+\end{document}
