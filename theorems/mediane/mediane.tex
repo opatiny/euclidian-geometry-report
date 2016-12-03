@@ -4,9 +4,38 @@
 
 \begin{document}
 
+\pagebreak
 \subsection{Théorème de l'intersection des médianes}
+Commençons par définir la médiane.
+\begin{definition}{Médiane:}
+Droite passant par le sommet d'un triangle et qui partage le côté opposé en deux parties égales.
+\end{definition}
+
 \begin{theorem}
-La médiatrice d'un segment est le lieu géométrique des points équidistants à ses extrémités.
+Les médianes d'un triangle concourent en un point situé à deux tiers des sommets du triangle.
 \end{theorem}
 
+\begin{proof}
+Nous considérons le triangle quelconque $ABC$ et nous représentons les point $A'$, $B'$ et $C'$ qui coupent les respectivement les côtés $a$, $b$ et $c$ en leurs milieux. 
+\begin{hyp}
+Les segments $AA'$ et $BB'$ sont confondus avec les médianes du triangle $ABC$, ils se croisent en un point $G$.
+\end{hyp}
+\begin{concl}
+La droite qui passe par les points $C$ et $G$ coupe le segment $AB$ en $C'$.
+\end{concl}
+
+Nous construisons un point $L$ sur le prolongement de $CG$ de sorte à ce que $GL \equiv CG$.
+
+% insérer schema 1
+
+Ainsi, nous observons que les segments $GB'$ et $LA$ sont parallèles, car $CG \equiv GL$ et $CB' \equiv B'A$ (voir théorème \ref{semblableTh2}). Les segments $BG$ et $LA$ sont donc parallèles ($BG$ est le prolongement de $GB'$). En suivant le même raisonnement, nous concluons que $BL$ est parallèle à $GA$. 
+
+% insérer schema 2
+
+Par conséquent le quadrilatère $BLAG$ est un parallèlogramme car il a deux paires de côtés parallèles. Puisque les diagonales des parallèlogrammes se coupent en leurs milieux (théorème \ref{th:parallelogramme}), nous savons que $BC' \equiv C'A$. Cela signifie que la droite qui passe par $CG$ est confondue avec la médiane du triangle $ABC$ passant par $C$.\\
+
+% insérer schema 3
+
+De plus, nous observons que $LC \equiv C'G$  et que $CG$ est donc égal à deux $C'G$.
+\end{proof}
 \end{document}
